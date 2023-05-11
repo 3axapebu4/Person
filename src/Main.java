@@ -10,9 +10,6 @@ public class Main {
     static int b;
     public static String[] num = new String[10];
 
-    public Main() {
-    }
-
     public static void main(String[] args) {
         List<Person> personList = readFile();
         System.out.println("введено " + personList.size() + " пользоватлеей");
