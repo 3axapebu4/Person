@@ -26,7 +26,7 @@ public class Main {
         ArrayList personList = new ArrayList();
 
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\erokhzak\\Desktop\\person.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("src\\Person.txt"));
 
             while(reader.ready()) {
                 int user = Integer.parseInt(reader.readLine());
