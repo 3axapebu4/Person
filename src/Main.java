@@ -8,7 +8,7 @@ import java.util.List;
 public class Main {
     static int count;
     static int b;
-    public static String[] num = new String[10];
+    public static ArrayList<String> People=new ArrayList<>();
 
     public static void main(String[] args) {
         List<Person> personList = readFile();
@@ -16,8 +16,8 @@ public class Main {
         writeInConsole(personList);
         System.out.println("введено " + count + " невалидных");
 
-        for(int i = 0; i < num.length; ++i) {
-            System.out.println(num[i]);
+        for(int i = 0; i < b; ++i) {
+            System.out.println(People.get(i));
         }
 
     }
@@ -65,11 +65,9 @@ public class Main {
             return true;
         } else {
             ++count;
-
             for(int i = b; i < count; ++i) {
                 num[i] = name;
             }
-
             ++b;
             return false;
         }
